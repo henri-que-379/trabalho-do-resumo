@@ -1,0 +1,8 @@
+// Seleciona o botão e adiciona o evento de clique
+document.getElementById('actionButton').addEventListener('click', () => {
+    // Muda o texto do título
+    document.querySelector('h1').textContent = 'Você clicou no botão!';
+    
+    // Exibe o alerta
+    document.getElementById('alertBox').style.display = 'block';
+});
