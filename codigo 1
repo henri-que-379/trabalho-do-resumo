@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de addEventListener em JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>O que é o <code>addEventListener</code>?</h1>
+        <p>O <code>addEventListener</code> é um método em JavaScript usado para adicionar "ouvintes" de eventos em elementos HTML. Ele executa uma função sempre que o evento ocorre.</p>
+        
+        <h2>Exemplo:</h2>
+        <p>Ao clicar no botão, o título mudará e um alerta será exibido.</p>
+        
+        <button id="actionButton">Clique aqui</button>
+
+        <div class="alert" id="alertBox">Você clicou no botão!</div>
+
+        <h3>Código JavaScript:</h3>
+        <pre>
+            const button = document.getElementById('actionButton');
+            button.addEventListener('click', () => {
+                document.querySelector('h1').textContent = 'Você clicou no botão!';
+                document.getElementById('alertBox').style.display = 'block';
+            });
+        </pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
